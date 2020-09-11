@@ -33,19 +33,24 @@ export default function App({children}) {
 
     return (
         <React.Fragment>
-          <button onClick={() => setActiveSlide(moveLeft)}>PREV</button>
+            <button onClick={() => setActiveSlide(moveLeft)}>PREV</button>
+            <button onClick={() => setActiveSlide(moveRight)}>NEXT</button>
           <div id="test">
+            
             {children.map((child, i) => {
+             
               const active = i === activeSlide;
               return (
+                
                 <div className={`slide ${active ? "active" : ""}`} ref={active ? activeSlideRef : null} id={`slide-${i}`} key={`slide-${i}`}>
                   {child}
                 </div>
               );
             })}
+            
           </div>
-
-          <button onClick={() => setActiveSlide(moveRight)}>NEXT</button>
+          
+         
         </React.Fragment>
     );
 }

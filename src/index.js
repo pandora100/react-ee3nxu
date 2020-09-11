@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 
 ReactDOM.render(
-<div style={{display :'flex', flexDirection:'rows',alignItems:'center',justifyContent:'center'}}>  
+<div style={{display :'flex', flexDirection:'columns',alignItems:'space-between',justifyContent:'center',padding:'10px'}}>  
 <App>
       <div>slide 0 </div>
       <div>slide 1 </div>
