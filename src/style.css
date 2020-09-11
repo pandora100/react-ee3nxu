@@ -1,3 +1,25 @@
 h1, p {
   font-family: Lato;
 }
+.slide {
+  
+ 
+  text-align:CENTER;
+  width: 150px;
+  height: 148px;
+  overflow-y:auto ; 
+  overflow-x:hidden;
+  background: #cab;
+  transform: rotate(360deg);
+   
+  
+}
+#test {
+  overflow: scroll;
+  max-height: 10em;
+  color: rgb(84, 84, 139);
+}
+.active {
+  font-weight: bold;
+  
+}
